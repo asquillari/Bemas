@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;   
+    color: rgb(1, 51, 85);     
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #2980b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(211, 30%, 24%, 0.6), hsla(204, 64%, 44%, 0.6)), url(img/Elena/renderFrente.jpeg);
+    background: linear-gradient(to right, hsla(211, 30%, 24%, 0.6), hsla(204, 64%, 44%, 0.6)), url(img/Elena/renderFrente.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    z-index: 100%;
+}
+
+.logo {
+    height: 100%;
+    max-width: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro{
+    display: flex;
+    height: 420px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.intro h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.usimg{
+    width: 48%;
+    object-fit: cover;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+    align-items: center;
+
+}
+
+.ustext{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.misvis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box {
+    height: fit-content;
+    width: 30rem;
+    color: rgb(1, 51, 85);     
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+.subt{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(1, 51, 85);         
+}
+
+p {
+    margin: 10px;
+    font-size: 18px;
+    color: rgb(1, 51, 85);
+}
+
+.projects{
+    background: #f2f2f2;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%; 
+    min-width: 150px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /* Corregí el valor de la sombra */
+}
+
+.imagen-port > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imggallery{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galería {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(216, 93%, 22%, 0.7);
+    transition: transform .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galería img{
+    width: 50px;
+}
+
+.hover-galería p{
+    color: white;
+}
+
+.imagen-port:hover .hover-galería{
+    transform: scale(1);
+}
+
+.consultas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+    align-items: center;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.contact-left h2{
+    text-align: left;
+}
+
+.contact-left hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(1, 51, 85);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border-color: rgb(1, 51, 85);
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(1, 51, 85);
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,rgb(1, 51, 85),rgb(99, 170, 218));
+    cursor: pointer;
+}
+
+
+.contact-right img{
+    width: 500px;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+footer{
+    background: darkgray;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box-footer {
+    text-align: center;
+}
+
+.box-footer h4{
+    color: white;
+    border-bottom: 3px solid rgb(1, 51, 85);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.box-footer p{
+    color: #e6e6e6;
+}
+
+.final p{
+    text-align: center;
+    margin: 20px;
+    color: rgb(92, 92, 92);
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    .contact-inputs{
+        width: 80vw;
+    }
+
+    .contact-right{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .aboutus{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus .usimg{
+        width: 100%;
+    }
+
+    .intro > h2 {
+        font-size: 20px;
+    }
+
+    nav {
+        padding: 10px 10px 0 0;
+    }
+    
+    nav a{
+        margin-right: 5px;
+    }
+
+    .logo {
+        height: 90%;
+        max-width: auto;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+    
+    .card{
+        flex-direction: column;
+
+    }
+
+    .box-footer {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .box-footer h4{
+        border: none;
+    }
+
+    .box-footer p{
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    
+    .final {
+        font-size: 20px;
+    }
+}
